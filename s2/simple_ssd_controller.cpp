@@ -240,7 +240,7 @@ void simple_ssd_controller::debug_check_all_req_completed() const {
 	ppn_t total_number_of_gc_page_write_b = 0;
 	// end LaiYang
 	// Ana
-	cout << "**************************** Foreground GC per Die ****************************"<<endl;
+	cout << "**************************** Request per Die ****************************"<<endl;
 	// end Ana
 	for (int die_idx = 0; die_idx < die_schedulers.size(); die_idx++) {
 
@@ -279,16 +279,18 @@ void simple_ssd_controller::debug_check_all_req_completed() const {
                 total_number_of_gc_page_read_b += die_schedulers[die_idx]->number_of_gc_page_read_b;
                 total_number_of_gc_page_write_f += die_schedulers[die_idx]->number_of_gc_page_write_f;
                 total_number_of_gc_page_write_b += die_schedulers[die_idx]->number_of_gc_page_write_b;
-                total_number_of_gc_page_erase_f += die_schedulers[die_idx]->number_of_gc_page_erase_f;
-		// Ana
-		cout << "Die: " << die_idx << "# of foreground_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_f << endl;                
-		// end Ana
+                total_number_of_gc_page_erase_f += die_schedulers[die_idx]->number_of_gc_page_erase_f;	
 		total_number_of_gc_page_erase_b += die_schedulers[die_idx]->number_of_gc_page_erase_b;
-                // end LaiYang
+		// end LaiYang
+		// Ana
+		cout << "Die: " << die_idx << " # of f_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_f;                
+                cout << "\t | # of b_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_b << "\tPage_r: ";
+		cout << die_schedulers[die_idx]->number_of_io_page_read << "\tPage_w: " << die_schedulers[die_idx]->number_of_io_page_write << endl;
+		// end Ana
 
 	}
 	// Ana
-	cout << "************************** end of foreground gc per die ************************" << endl;
+	cout << "************************** end of request per die ************************" << endl;
 	// end Ana
 
 	// LaiYang
