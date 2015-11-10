@@ -285,7 +285,7 @@ void simple_ssd_controller::debug_check_all_req_completed() const {
 		total_number_of_gc_page_erase_b += die_schedulers[die_idx]->number_of_gc_page_erase_b;
 		// end LaiYang
 		// Ana
-		cout << "Die: " << die_idx << " # of f_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_f;                
+		cout << "Die: " << die_idx << "\t# of f_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_f;                
                 cout << "\t# of b_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_b << "\t\tPage_r: ";
 		cout << die_schedulers[die_idx]->number_of_io_page_read << "\tPage_w: " << die_schedulers[die_idx]->number_of_io_page_write << endl;
 		// end Ana
