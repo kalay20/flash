@@ -15,6 +15,8 @@
 #include "simple_die_scheduler.h"
 #include "simple_die_ftl.h"
 
+#define jiawei_die
+
 using namespace std;
 using namespace sc_core;
 
@@ -284,7 +286,7 @@ void simple_ssd_controller::debug_check_all_req_completed() const {
 		// end LaiYang
 		// Ana
 		cout << "Die: " << die_idx << " # of f_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_f;                
-                cout << "\t | # of b_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_b << "\tPage_r: ";
+                cout << "\t# of b_gc: " << die_schedulers[die_idx]->number_of_gc_page_erase_b << "\t\tPage_r: ";
 		cout << die_schedulers[die_idx]->number_of_io_page_read << "\tPage_w: " << die_schedulers[die_idx]->number_of_io_page_write << endl;
 		// end Ana
 
@@ -646,7 +648,7 @@ void simple_ssd_controller::on_recv_completed(int bus_id) {
 					die_schedulers[die_index]->schedule_io_page_read(m_recv_buf, die_op_lpn);
 					break;
 				case SSD_REQ_TYP_WR:
-#if 0
+#ifdef jiawei_die
 					die_index = m_die_idx;
 					m_die_idx += ch_array.size();
 					if (m_die_idx > m_number_of_die -1){
@@ -656,7 +658,7 @@ void simple_ssd_controller::on_recv_completed(int bus_id) {
 					die_index = m_die_idx;
 					die_schedulers[die_index]->schedule_io_page_write(m_recv_buf, die_op_lpn);
 					break;
-#elif 1
+#else 					//LaiYang_die
 					die_index = m_die_idx;
 					m_die_idx++;
 					if (m_die_idx > m_number_of_die -1){
@@ -666,6 +668,7 @@ void simple_ssd_controller::on_recv_completed(int bus_id) {
 					//die_index = m_die_idx;
 					die_schedulers[die_index]->schedule_io_page_write(m_recv_buf, die_op_lpn);
 					break;
+					//LaiYang_die end
 #endif
 				default:
 					assert(0);
