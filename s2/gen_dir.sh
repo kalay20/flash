@@ -5,7 +5,7 @@ prefix=(wl_die block_size_config 3_factor el_die bs_die ch_die rwd)
 d1=( config exec out )
 
 
-mkdir trace
+#mkdir trace
 
 for (( i=0; i<3; i++ ))
 do
