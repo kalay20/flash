@@ -1,0 +1,46 @@
+#!/bin/bash
+for trace in ex_0 
+do
+    echo -n -e ${trace}'\tMiss\t'
+    for die in 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120
+    do
+        tail ${trace}_die_${die} | grep "Number of SLO Miss Requests = " | cut -d '=' -f2 | cut -d ' ' -f2  |tr -s '\n' '\t'
+    done
+done
+echo
+for trace in ex_2 ex_6 ex_7 ex_8
+do
+    echo -n -e ${trace}'\tMiss\t'
+    for die in 69 78 87 95 104 113 121 130 138 147 156 164 173 182 190 199 207 216 233 225 242 251 259 #207 225 242 259 276 294 311 328 345 363 380 397 414
+    do
+        tail ${trace}_die_${die} | grep "Number of SLO Miss Requests = " | cut -d '=' -f2 | cut -d ' ' -f2 |tr -s '\n' '\t'
+    done
+    echo
+done
+for trace in msn_4 msn_5
+do
+        echo -n -e ${trace}'\tMiss\t'
+    for die in 25 29 32 35 38 41 44 47 50 54 57 60 63 66 69 72 75 79 82 85 88 91 94
+    do
+        tail ${trace}_die_${die} | grep "Number of SLO Miss Requests = " | cut -d '=' -f2 | cut -d ' ' -f2 |tr -s '\n' '\t'
+    done
+    echo
+done
+for trace in 3.cache 5.cache 6.cache
+do
+        echo -n -e ${trace}'\tMiss\t'
+    for die in 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 12 12 13 13 14 14 15 15
+    do
+        tail ${trace}_${die} | grep "Number of SLO Miss Requests = " | cut -d '=' -f2 | cut -d ' ' -f2 |tr -s '\n' '\t'
+    done
+    echo
+done
+#
+#for trace in ex_0 ex_2 ex_6 ex_7 ex_8 msn_4 msn_5 3.cache 5.cache 6.cache
+#do
+#    for time in 1 1.5 2 2.5 3 3.5 4 4.5 5
+#    do
+#        echo -n -e ${trace}'\t'${time}'\t'
+#        grep "FGC" ${trace}_t_${time}_no | wc
+#    done
+#done

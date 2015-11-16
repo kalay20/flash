@@ -1,0 +1,174 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 4 in trace file (/home/r03/immomo808/workload/msn_fs.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/msn_fs.trace.stat) and directly use it
+number of dice = 50
+number of channels = 32
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 12627396
+All_req_complete: 21867492220059 ns
+Total execution time: 21867492220059 ns
+ total gc: 44313
+ avg live page copy per gc: 443.005
+For entire SSD:
+	# of User Page Read: 11297600
+	# of User Page Write: 3306809
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 3306809 (100%)
+	# of GC Page Read: 19609226
+		# of Foreground: 40540,		# of Background: 19649766
+	# of GC Page Write: 19597633
+		# of Foreground: 40540,		# of Background: 19638173
+	# of GC Block Erase: 44313
+		# of Foreground: 40540,		# of Background: 84853
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 44313 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 50
+	Block Number: 51200
+	User Write Count: 3306809
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 22904442
+	Write Amplification: 6.926448
+	Total Erase Count: 44313
+	Average Erase Count: 0.865488
+For total 12627396 I/O requests:
+	total read = 9624191 requests
+	total write = 3003205 requests
+	average I/O latency = 4.931635 ms
+	average read latency = 0.900509 ms
+	average write latency = 17.849943 ms
+	99th percentile I/O latency = 58.865866 ms
+	Number of Requests = 12627396
+	Number of SLO Miss Requests = 1797

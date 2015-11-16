@@ -1,0 +1,177 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 5 in trace file (/home/r03/immomo808/workload/msn_fs.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/msn_fs.trace.stat) and directly use it
+number of dice = 35
+number of channels = 32
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 12981711
+All_req_complete: 21867477551059 ns
+Total execution time: 21876655533051199 ps
+ total gc: 50261
+ avg live page copy per gc: 447.877
+For entire SSD:
+	# of User Page Read: 11055505
+	# of User Page Write: 3496394
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 3496394 (100%)
+	# of GC Page Read: 22479686
+		# of Foreground: 0,		# of Background: 22479686
+	# of GC Page Write: 22463670
+		# of Foreground: 0,		# of Background: 22463670
+	# of GC Block Erase: 50261
+		# of Foreground: 0,		# of Background: 50261
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 50261 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 35
+	Block Number: 35840
+	User Write Count: 3496394
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 25960064
+	Write Amplification: 7.424811
+	Total Erase Count: 50261
+	Average Erase Count: 1.402372
+For total 12981711 I/O requests:
+	total read = 9941613 requests
+	total write = 3040098 requests
+	average I/O latency = 13.368648 ms
+	average read latency = 1.281560 ms
+	average write latency = 52.895385 ms
+	99th percentile I/O latency = 193.142803 ms
+	Number of Requests = 12981711
+	Number of SLO Miss Requests = 600111

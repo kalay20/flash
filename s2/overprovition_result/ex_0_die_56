@@ -1,0 +1,87 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 0 in trace file (/home/r03/immomo808/workload/ms_exchange_server.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/ms_exchange_server.trace.stat) and directly use it
+number of dice = 56
+number of channels = 32
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 3911869
+All_req_complete: 87225101810059 ns
+Total execution time: 87225101810059 ns
+ total gc: 36959
+ avg live page copy per gc: 281.429
+For entire SSD:
+	# of User Page Read: 492139
+	# of User Page Write: 8819969
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 8819969 (100%)
+	# of GC Page Read: 10310653
+		# of Foreground: 459464,		# of Background: 10770117
+	# of GC Page Write: 10285358
+		# of Foreground: 459464,		# of Background: 10744822
+	# of GC Block Erase: 36959
+		# of Foreground: 459464,		# of Background: 496423
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 36959 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 56
+	Block Number: 57344
+	User Write Count: 8819969
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 19105327
+	Write Amplification: 2.166144
+	Total Erase Count: 36959
+	Average Erase Count: 0.644514
+For total 3911869 I/O requests:
+	total read = 316969 requests
+	total write = 3594900 requests
+	average I/O latency = 8.152791 ms
+	average read latency = 0.615516 ms
+	average write latency = 8.817367 ms
+	99th percentile I/O latency = 45.246896 ms
+	Number of Requests = 3911869
+	Number of SLO Miss Requests = 11618

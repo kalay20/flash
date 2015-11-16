@@ -1,0 +1,177 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 5 in trace file (/home/r03/immomo808/workload/msn_fs.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/msn_fs.trace.stat) and directly use it
+number of dice = 54
+number of channels = 32
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 12981711
+All_req_complete: 21867477551059 ns
+Total execution time: 21882738106493796 ps
+ total gc: 45757
+ avg live page copy per gc: 441.352
+For entire SSD:
+	# of User Page Read: 11055505
+	# of User Page Write: 3496394
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 3496394 (100%)
+	# of GC Page Read: 20172167
+		# of Foreground: 459464,		# of Background: 20631631
+	# of GC Page Write: 20155373
+		# of Foreground: 139738278745720,		# of Background: 139738298901093
+	# of GC Block Erase: 45757
+		# of Foreground: 0,		# of Background: 46430
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 45757 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 54
+	Block Number: 55296
+	User Write Count: 3496394
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 23651767
+	Write Amplification: 6.764617
+	Total Erase Count: 45757
+	Average Erase Count: 0.827492
+For total 12981711 I/O requests:
+	total read = 9941613 requests
+	total write = 3040098 requests
+	average I/O latency = 3.222256 ms
+	average read latency = 0.846358 ms
+	average write latency = 10.991827 ms
+	99th percentile I/O latency = 34.417726 ms
+	Number of Requests = 12981711
+	Number of SLO Miss Requests = 10

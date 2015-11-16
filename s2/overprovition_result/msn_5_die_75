@@ -1,0 +1,177 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 5 in trace file (/home/r03/immomo808/workload/msn_fs.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/msn_fs.trace.stat) and directly use it
+number of dice = 75
+number of channels = 32
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 12981711
+All_req_complete: 21867477551059 ns
+Total execution time: 21867477551059 ns
+ total gc: 39686
+ avg live page copy per gc: 430.312
+For entire SSD:
+	# of User Page Read: 11055505
+	# of User Page Write: 3496394
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 3496394 (100%)
+	# of GC Page Read: 17061791
+		# of Foreground: 459464,		# of Background: 17521255
+	# of GC Page Write: 17044953
+		# of Foreground: 459464,		# of Background: 17504417
+	# of GC Block Erase: 39686
+		# of Foreground: 459464,		# of Background: 499150
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 39686 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 75
+	Block Number: 76800
+	User Write Count: 3496394
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 20541347
+	Write Amplification: 5.875009
+	Total Erase Count: 39686
+	Average Erase Count: 0.516745
+For total 12981711 I/O requests:
+	total read = 9941613 requests
+	total write = 3040098 requests
+	average I/O latency = 1.733856 ms
+	average read latency = 0.642480 ms
+	average write latency = 5.302831 ms
+	99th percentile I/O latency = 11.494407 ms
+	Number of Requests = 12981711
+	Number of SLO Miss Requests = 0

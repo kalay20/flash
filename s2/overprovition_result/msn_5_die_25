@@ -1,0 +1,177 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 5 in trace file (/home/r03/immomo808/workload/msn_fs.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/msn_fs.trace.stat) and directly use it
+number of dice = 25
+number of channels = 25
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 12981711
+All_req_complete: 21867484596002596 ps
+Total execution time: 21963590693455549 ps
+ total gc: 53949
+ avg live page copy per gc: 452.467
+For entire SSD:
+	# of User Page Read: 11055505
+	# of User Page Write: 3496394
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 3496394 (100%)
+	# of GC Page Read: 24379000
+		# of Foreground: 0,		# of Background: 24379000
+	# of GC Page Write: 24359965
+		# of Foreground: 0,		# of Background: 24359965
+	# of GC Block Erase: 53949
+		# of Foreground: 0,		# of Background: 53949
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 53949 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 25
+	Block Number: 25600
+	User Write Count: 3496394
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 27856359
+	Write Amplification: 7.967168
+	Total Erase Count: 53949
+	Average Erase Count: 2.107383
+For total 12981711 I/O requests:
+	total read = 9941613 requests
+	total write = 3040098 requests
+	average I/O latency = 28.542453 ms
+	average read latency = 1.857043 ms
+	average write latency = 115.808066 ms
+	99th percentile I/O latency = 391.634384 ms
+	Number of Requests = 12981711
+	Number of SLO Miss Requests = 1286395

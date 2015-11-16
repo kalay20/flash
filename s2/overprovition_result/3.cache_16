@@ -1,0 +1,330 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 0 in trace file (/home/r03/immomo808/workload/3.cache.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/3.cache.trace.stat) and directly use it
+number of dice = 16
+number of channels = 16
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 28290970
+All_req_complete: 86399990680359 ns
+Total execution time: 86406144040252818 ps
+ total gc: 96014
+ avg live page copy per gc: 357.566
+For entire SSD:
+	# of User Page Read: 32694446
+	# of User Page Write: 15504630
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 15504630 (100%)
+	# of GC Page Read: 34283744
+		# of Foreground: 0,		# of Background: 34283744
+	# of GC Page Write: 34049617
+		# of Foreground: 0,		# of Background: 34049617
+	# of GC Block Erase: 96014
+		# of Foreground: 0,		# of Background: 96014
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 96014 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 16
+	Block Number: 16384
+	User Write Count: 15504630
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 49554247
+	Write Amplification: 3.196093
+	Total Erase Count: 96014
+	Average Erase Count: 5.860229
+For total 28290970 I/O requests:
+	total read = 18189834 requests
+	total write = 10101136 requests
+	average I/O latency = 5.503700 ms
+	average read latency = 1.778107 ms
+	average write latency = 12.212641 ms
+	99th percentile I/O latency = 73.515099 ms
+	Number of Requests = 28290970
+	Number of SLO Miss Requests = 226092

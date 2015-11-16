@@ -1,0 +1,174 @@
+===================== SIMPLE DIE FTL 20140703 v1 ========================
+[INFO] use disk 4 in trace file (/home/r03/immomo808/workload/msn_fs.trace) for simulation
+[INFO] found trace stat cache file (/home/r03/immomo808/workload/msn_fs.trace.stat) and directly use it
+number of dice = 63
+number of channels = 32
+End of FTL init
+Start simulation...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reached the end of trace file with total number of transactions = 12627396
+All_req_complete: 21867492220059 ns
+Total execution time: 21867492220059 ns
+ total gc: 40303
+ avg live page copy per gc: 436.347
+For entire SSD:
+	# of User Page Read: 11297600
+	# of User Page Write: 3306809
+		# of User SLC Page Write: 0 (0%)
+		# of User MLC Page Write: 3306809 (100%)
+	# of GC Page Read: 17555886
+		# of Foreground: 459464,		# of Background: 18015350
+	# of GC Page Write: 17542622
+		# of Foreground: 459464,		# of Background: 18002086
+	# of GC Block Erase: 40303
+		# of Foreground: 459464,		# of Background: 499767
+		# of GC SLC Block Erase: 0 (0%)
+		# of GC MLC Block Erase: 40303 (100%)
+For my master thesis: 
+	Policy: NO_SLC_POLICY
+	Deadline: 100.000000
+	Die Number: 63
+	Block Number: 64512
+	User Write Count: 3306809
+	User SLC Write Count: 0
+	User SLC Percentage: 0.000000
+	User SLC Overall Speedup Efficiency: 0.000000
+	User SLC SLO-targeted Speedup Efficiency: 0.000000
+	Total Write Count: 20849431
+	Write Amplification: 6.305000
+	Total Erase Count: 40303
+	Average Erase Count: 0.624736
+For total 12627396 I/O requests:
+	total read = 9624191 requests
+	total write = 3003205 requests
+	average I/O latency = 2.656001 ms
+	average read latency = 0.727175 ms
+	average write latency = 8.837194 ms
+	99th percentile I/O latency = 26.641467 ms
+	Number of Requests = 12627396
+	Number of SLO Miss Requests = 0
