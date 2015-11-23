@@ -2,7 +2,7 @@
 
 
 
-config_origin=ssd_typedef_normal.h
+config_origin=ssd_typedef.h
 change=${change:-1}
 
 
@@ -11,8 +11,7 @@ source ./param.sh
 
 #prefix=""
 config_dir="config/$prefix"
-exec_dir="exec/$prefix"
-out_dir="out/$prefix"
+result_dir="result/$prefix"
 
 IssueCommand()
 {

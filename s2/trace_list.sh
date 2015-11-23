@@ -6,7 +6,7 @@ wd_start=${wd_start:-0}
 wd_end=${wd_end:-11}
 wd_bool_default=(1 0 0 0 0 0 0 0 0 0 0)
 wd_bool=("${wd_bool[@]:-${wd_bool_default[@]}}")
-workload_prefix=( ex msl msn syf syn 2cache 3cache 4cache 5cache 6cache 7cache )
+workload_prefix=( ex msl msn syf syn 2.cache 3.cache 4.cache 5.cache 6.cache 7.cache )
 workload_origin_path=( \
 	/home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace \
 	/home/r01/gengyouchen/ssd_trace/ms_live_maps.trace \
