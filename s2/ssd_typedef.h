@@ -44,7 +44,7 @@
 #define CHANNEL_ERASE_INPUT_LATENCY (CHANNEL_IO_CYCLE * (BYTE_PER_COMMAND + BYTE_PER_ADDRESS))
 #define CHANNEL_ERASE_OUTPUT_LATENCY (CHANNEL_IO_CYCLE * BYTE_PER_STATUS)
 
-//#define ADD_DUMMY_TO_INITIAL_LAYOUT	// SSD initialized utilization to simulate used SSD
+#define ADD_DUMMY_TO_INITIAL_LAYOUT	// SSD warm-up to simulate used SSD
 #define OLD_DATA_MAPPING		// Original page allocation implementation, else Laiyang's implementation
 
 #define DEADLINE_AWARE_SLC_POLICY
