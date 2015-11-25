@@ -2,12 +2,12 @@
 
 prefix_end=3
 prefix=(baseline overprovision alltrace)
-d1=( config result )
+d1=( result )
 
 
 #mkdir trace
 
-for (( i=0; i<2; i++ ))
+for (( i=0; i<1; i++ ))
 do
 	mkdir "${d1["$i"]}"
 	for (( j=0; j<$prefix_end; j++ ))
