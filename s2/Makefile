@@ -21,6 +21,7 @@ original:
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 4 > result/6.cache_4 & 
 
 overprovision:
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 31 > result/ex_0_die_31 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 32 > result/ex_0_die_32 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 36 > result/ex_0_die_36 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 40 > result/ex_0_die_40 & 
