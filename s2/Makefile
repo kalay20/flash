@@ -8,7 +8,19 @@ LIBS += -lsystemc
 all:
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(LIBS) -o run.x gyc_ftl_p_meta_table.cpp gyc_ftl_wr_ptr.cpp simple_die_ftl.cpp simple_die_scheduler.cpp simple_die_controller.cpp simple_ssd_controller.cpp simple_io_scheduler.cpp main.cpp
 
-run:
+original:
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 31 > result/ex_0_die_31 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 69 > result/ex_2_die_69 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 69 > result/ex_6_die_69 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 69 > result/ex_7_die_69 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 69 > result/ex_8_die_69 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 4 25 > result/msn_4_die_25 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 5 25 > result/msn_5_die_25 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/3.cache.trace 0 4 > result/3.cache_4 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/5.cache.trace 0 4 > result/5.cache_4 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 4 > result/6.cache_4 & 
+
+overprovision:
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 32 > result/ex_0_die_32 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 36 > result/ex_0_die_36 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 40 > result/ex_0_die_40 & 
@@ -44,6 +56,7 @@ run:
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 138 > result/ex_2_die_138 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 147 > result/ex_2_die_147 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 156 > result/ex_2_die_156 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 159 > result/ex_2_die_159 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 69 > result/ex_6_die_69 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 78 > result/ex_6_die_78 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 87 > result/ex_6_die_87 & 
@@ -51,6 +64,11 @@ run:
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 104 > result/ex_6_die_104 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 113 > result/ex_6_die_113 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 121 > result/ex_6_die_121 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 130 > result/ex_6_die_130 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 138 > result/ex_6_die_138 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 147 > result/ex_6_die_147 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 156 > result/ex_6_die_156 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 159 > result/ex_6_die_159 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 69 > result/ex_7_die_69 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 78 > result/ex_7_die_78 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 87 > result/ex_7_die_87 &
@@ -58,13 +76,23 @@ run:
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 104 > result/ex_7_die_104 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 113 > result/ex_7_die_113 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 121 > result/ex_7_die_121 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 69 > result/ex_8_die_69 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 78 > result/ex_8_die_78 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 87 > result/ex_8_die_87 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 95 > result/ex_8_die_95 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 104 > result/ex_8_die_104 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 113 > result/ex_8_die_113 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 121 > result/ex_8_die_121 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 130 > result/ex_7_die_130 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 138 > result/ex_7_die_138 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 147 > result/ex_7_die_147 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 156 > result/ex_7_die_156 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 159 > result/ex_7_die_159 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 69 > result/ex_8_die_69 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 78 > result/ex_8_die_78 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 87 > result/ex_8_die_87 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 95 > result/ex_8_die_95 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 104 > result/ex_8_die_104 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 113 > result/ex_8_die_113 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 121 > result/ex_8_die_121 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 130 > result/ex_8_die_130 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 138 > result/ex_8_die_138 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 147 > result/ex_8_die_147 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 156 > result/ex_8_die_156 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 159 > result/ex_8_die_159 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 4 25 > result/msn_4_die_25 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 4 29 > result/msn_4_die_29 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 4 32 > result/msn_4_die_32 & 
