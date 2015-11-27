@@ -164,6 +164,32 @@ overprovision:
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 16 > result/6.cache_16 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 20 > result/6.cache_20 & 
 
+trace:
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 32 > result/traces/ex_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 1 > result/traces/ex_1 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 69 > result/traces/ex_2 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 3 > result/traces/ex_3 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 4 > result/traces/ex_4 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 5 > result/traces/ex_5 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 69 > result/traces/ex_6 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 69 > result/traces/ex_7 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 69 > result/traces/ex_8 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 9 > result/traces/ex_9 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 1 > result/traces/msn_1 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 2 > result/traces/msn_2 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 3 > result/traces/msn_3 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 4 25 > result/traces/msn_4 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 5 > result/traces/msn_5 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/2.cache.trace 0 > result/traces/2.cache_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/3.cache.trace 0 4 > result/traces/3.cache_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/4.cache.trace 0 > result/traces/4.cache_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/5.cache.trace 0 4 > result/traces/5.cache_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 4 > result/traces/6.cache_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/7.cache.trace 0 > result/traces/7.cache_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 0 > result/traces/msl_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 > result/traces/msl_1 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/synthetic_overload.trace 0 > result/traces/syn_0 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/synthetic_overload_full.trace 0 > result/traces/synf_0 &
 clean:
 	rm -f run.x
 
