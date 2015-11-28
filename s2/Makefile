@@ -20,6 +20,19 @@ original:
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/5.cache.trace 0 4 > result/5.cache_4 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 4 > result/6.cache_4 & 
 
+
+epoch:
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 31 > result/epoch_1.0/ex_0_die_31 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 2 69 > result/epoch_1.0/ex_2_die_69 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 69 > result/epoch_1.0/ex_6_die_69 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 69 > result/epoch_1.0/ex_7_die_69 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 69 > result/epoch_1.0/ex_8_die_69 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 4 25 > result/epoch_1.0/msn_4_die_25 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 5 25 > result/epoch_1.0/msn_5_die_25 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/3.cache.trace 0 4 > result/epoch_1.0/3.cache_4 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/5.cache.trace 0 4 > result/epoch_1.0/5.cache_4 & 
+#	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/6.cache.trace 0 4 > result/epoch_1.0/6.cache_4 & 
+
 overprovision:
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 31 > result/ex_0_die_31 & 
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 32 > result/ex_0_die_32 & 
