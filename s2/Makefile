@@ -236,7 +236,7 @@ _trace:
 	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 6 69 > result/ex_6 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 7 69 > result/ex_7 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 8 69 > result/ex_8 &
-#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 9 > result/ex_9 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 9 69 > result/ex_9 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 1 25 > result/msn_1 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 2 25 > result/msn_2 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/msn_fs.trace 3 25 > result/msn_3 &
