@@ -7,6 +7,8 @@ LIBS += -lsystemc
 
 all:
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(LIBS) -o run.x gyc_ftl_p_meta_table.cpp gyc_ftl_wr_ptr.cpp simple_die_ftl.cpp simple_die_scheduler.cpp simple_die_controller.cpp simple_ssd_controller.cpp simple_io_scheduler.cpp main.cpp
+	mkdir result
+	make overprovision
 
 original:
 #	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 31 > result/ex_0_die_31 & 
@@ -155,14 +157,16 @@ overprovision:
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/7.cache.trace 0 14 > result/7.cache_14 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/7.cache.trace 0 15 > result/7.cache_15 &
 #	./run.x /home/r01/gengyouchen/ssd_trace/SieveDTrace-parsed-2/7.cache.trace 0 16 > result/7.cache_16 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 481 > result/msl_1_481 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 601 > result/msl_1_601 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 721 > result/msl_1_721 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 842 > result/msl_1_842 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 962 > result/msl_1_962 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 1082 > result/msl_1082 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 481 > result/msl_1 &
-	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 481 > result/msl_1 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 481 > result/msl_1_481 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 601 > result/msl_1_601 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 721 > result/msl_1_721 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 842 > result/msl_1_842 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 962 > result/msl_1_962 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 1082 > result/msl_1082 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 1202 > result/msl_1_1202 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 1323 > result/msl_1_1323 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 1443 > result/msl_1_1443 &
+#	./run.x /home/r01/gengyouchen/ssd_trace/ms_live_maps.trace 1 1563 > result/msl_1_1563 &
 
 epoch:
 	./run.x /home/r01/gengyouchen/ssd_trace/ms_exchange_server.trace 0 32 > result/ex_0 &

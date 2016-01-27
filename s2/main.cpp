@@ -168,7 +168,7 @@ int sc_main(int argc, char* argv[]) {
 	cout << "number of dice = " << number_of_dice << endl;
 	cout << "number of channels = " << number_of_channels << endl;
 	int min_free_blocks_percentage = 5;
-	slc_policy_t slc_policy = QUEUE_AWARE_SLC_POLICY;
+	slc_policy_t slc_policy = NO_SLC_POLICY;
 
 	simple_ssd_controller ssd(
 			"ssd",
@@ -278,7 +278,7 @@ int sc_main(int argc, char* argv[]) {
 	cout << "number of dice = " << number_of_dice << endl;
 	cout << "number of channels = " << number_of_channels << endl;
 	int min_free_blocks_percentage = 5;
-	slc_policy_t slc_policy = QUEUE_AWARE_SLC_POLICY;
+	slc_policy_t slc_policy = NO_SLC_POLICY;
 
 	simple_ssd_controller ssd(
 			"ssd",
