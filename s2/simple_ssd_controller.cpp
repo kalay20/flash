@@ -697,7 +697,7 @@ void simple_ssd_controller::on_recv_completed(int bus_id) {
 }
 
 #ifdef DEADLINE_AWARE_SLC_POLICY_SELF_TUNING
-void simple_ssd_controller::tla() {
+void simple_ssd_controller::tla() { // Target Latency Adapter
 	assert(m_tla_next_pr99 != NULL_MSEC);
 	if (m_tla_next_pr99 > DEADLINE_AWARE_SLC_POLICY_DEADLINE__MAX) {
 		if ((m_tla_next_pr99 - m_tla_prev_1_pr99) * (m_tla_next_targ - m_tla_prev_1_targ) > 0) {
