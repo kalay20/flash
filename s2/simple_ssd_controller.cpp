@@ -509,7 +509,7 @@ void simple_ssd_controller::_update_deadline_for_all_die() {
 		assert(m_tla_next_targ != NULL_MSEC);
 		assert(m_tla_next_pr99 == NULL_MSEC);
 //		die_schedulers[i]->set_deadline(m_tla_next_targ);
-/* Three SLO Domain */
+#ifdef MULTIPLE_SLO_DOMAIN
 		if(i%3==0){
 			die_schedulers[i]->set_deadline(m_tla_next_targ);
 		}else if(i%3==1){
@@ -517,7 +517,8 @@ void simple_ssd_controller::_update_deadline_for_all_die() {
 		}else if(i%3==2){
 			die_schedulers[i]->set_deadline(m_tla_next_targ);
 		}
-/* End Three SLO Domain */
+#endif
+
 #else
 		die_schedulers[i]->set_deadline(DEADLINE_AWARE_SLC_POLICY_DEADLINE);
 #endif
