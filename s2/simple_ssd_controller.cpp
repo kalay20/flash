@@ -390,7 +390,7 @@ void simple_ssd_controller::complete_parent(gyc_bus_pkt* parent_req) {
 		msec_t response_time = (sc_time_stamp() - parent_req->get_req_arrival_time()).to_seconds() * 1000;
 		io_latency_monitor.record_value(response_time);
 		// LaiYang
-		//add_req_complete_time(se_time(response_time,SC_MS));
+		// add_req_complete_time(se_time(response_time,SC_MS));
 		// end LaiYang
 									
 		if (io_latency_monitor.count() % 200000 == 0) {	//epoch tuning
@@ -517,6 +517,8 @@ void simple_ssd_controller::_update_deadline_for_all_die() {
 		}else if(i%3==2){
 			die_schedulers[i]->set_deadline(m_tla_next_targ);
 		}
+#else 
+		die_schedulers[i]->set_deadline(m_tla_next_targ);
 #endif
 
 #else
