@@ -46,7 +46,7 @@
 
 #define ADD_DUMMY_TO_INITIAL_LAYOUT	// SSD warm-up to simulate used SSD
 #define OLD_DATA_MAPPING		// Original page allocation implementation, else Laiyang's implementation
-#define MULTIPLE_SLO_DOMAIN		
+//#define MULTIPLE_SLO_DOMAIN		
 
 #define DEADLINE_AWARE_SLC_POLICY
 #define DEADLINE_AWARE_SLC_POLICY_DEADLINE ((msec_t) 100.0)
